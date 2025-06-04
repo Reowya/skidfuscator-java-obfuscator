@@ -740,6 +740,7 @@ public class Skidfuscator {
                     // BASE
                     new RandomInitTransformer(this),
                     new InterproceduralTransformer(this),
+
                     // ----- COMMUNITY -----
                     new NumberTransformer(this),
                     new SwitchTransformer(this),
@@ -751,12 +752,7 @@ public class Skidfuscator {
                     new StringEqualsHashTransformer(this),
                     new StringEqualsIgnoreCaseHashTransformer(this),
                     new InstanceOfHashTransformer(this),
-                    //new LoopConditionTransformer(this),
-                /*
-                new FlatteningFlowTransformer(this),*/
                     new AhegaoTransformer(this)
-                    //new SimpleOutlinerTransformer()
-                    //
             ));
         } else {
             transformers.addAll(Arrays.asList(
